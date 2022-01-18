@@ -1,0 +1,8 @@
+body {
+    background-image:url(assets/img/bg-desktop.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 99vh;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

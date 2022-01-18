@@ -1,0 +1,39 @@
+<section class="body-modal">
+    <div>
+        <h2 mat-dialog-tittle class="title-text">Atualizar aparelho</h2>
+    </div>
+    <form [formGroup]="deviceForm" (ngSubmit)="onSubmit()">
+        <div class="c-card">
+            <mat-dialog-content class="mat-typography margin-radio">
+                <mat-form-field appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input matInput formControlName="nome" type="text">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Comodo</mat-label>
+                <input matInput formControlName="comodo" type="text">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>IP</mat-label>
+                <input matInput formControlName="ip" type="text">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Consumo</mat-label>
+                <input matInput formControlName="consumo" type="text">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Id</mat-label>
+                <input matInput formControlName="id" type="text">
+            </mat-form-field>
+        </mat-dialog-content>
+    </div>
+    </form>
+
+    <div>
+        <mat-dialog-actions id="btn-save">
+            <button mat-button color="primary" (click)="updateAlldevice()">Atualizar</button>
+            <button mat-button color="primary" (click)="closeModal()">Cancelar</button>
+        </mat-dialog-actions>
+    </div>
+
+</section>

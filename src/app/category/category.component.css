@@ -1,0 +1,31 @@
+button {
+     margin-right: 10px;
+     width: 6%;
+ }
+.c-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c-text {
+    color: #ffff;
+}
+
+.c-content {
+    display: flex;
+    width: 100%;
+    margin-top: 20%;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+.card-table {
+    width: 30%;
+    margin-top: 2%;
+}
+
+th {
+    color: #3f51b5; 
+}

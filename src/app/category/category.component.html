@@ -1,0 +1,40 @@
+<section class="c-container">
+    <div class="c-content">
+        <button mat-flat-button color="accent" (click)="openModalCreateDevice()">Criar</button>
+        <button mat-flat-button color="accent" (click)="openModalUpdateDevice()">Atualizar</button>
+        <button mat-flat-button color="accent" (click)= "openModalDeleteDevice()" >Excluir</button>
+    </div>
+    <table mat-table [dataSource]="listAllDevices[0]" class="mat-elevation-z8 card-table">
+         <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef> Nome </th>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+          </ng-container>
+
+        <ng-container matColumnDef="comodo">
+          <th mat-header-cell *matHeaderCellDef> Comodo </th>
+          <td mat-cell *matCellDef="let element"> {{element.comodo}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="consumo">
+          <th mat-header-cell *matHeaderCellDef> Consumo </th>
+          <td mat-cell *matCellDef="let element"> {{element.consumo}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="ip">
+          <th mat-header-cell *matHeaderCellDef> IP </th>
+          <td mat-cell *matCellDef="let element"> {{element.ip}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let element"> {{element._id}} </td>
+          </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+
+</section>
